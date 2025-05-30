@@ -1,2 +1,3 @@
-FROM httpd:latest
-COPY . /usr/local/apache2/htdocs/
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html/index.html
+EXPOSE 80
